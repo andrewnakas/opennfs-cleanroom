@@ -1,0 +1,160 @@
+{
+ "cars": [
+  {
+   "id": "cgt1",
+   "name": "Clean Coupe",
+   "top": 259,
+   "mass": 1380,
+   "stats": {
+    "accel": 14,
+    "speed": 14,
+    "handling": 14,
+    "brakes": 14
+   }
+  },
+  {
+   "id": "hat1",
+   "name": "Clean Hatch",
+   "top": 209,
+   "mass": 1150,
+   "stats": {
+    "accel": 9,
+    "speed": 9,
+    "handling": 12,
+    "brakes": 10
+   }
+  },
+  {
+   "id": "wdg1",
+   "name": "Clean Wedge",
+   "top": 310,
+   "mass": 1250,
+   "stats": {
+    "accel": 18,
+    "speed": 19,
+    "handling": 17,
+    "brakes": 18
+   }
+  }
+ ],
+ "colours": [
+  {
+   "name": "Signal Red",
+   "rgb": "#cd1818"
+  },
+  {
+   "name": "Cobalt Blue",
+   "rgb": "#1e53be"
+  },
+  {
+   "name": "Sunflower",
+   "rgb": "#ebc21c"
+  },
+  {
+   "name": "Pearl White",
+   "rgb": "#f0f0f0"
+  },
+  {
+   "name": "Graphite",
+   "rgb": "#464646"
+  },
+  {
+   "name": "Racing Green",
+   "rgb": "#186e2e"
+  },
+  {
+   "name": "Tangerine",
+   "rgb": "#f07013"
+  },
+  {
+   "name": "Silver",
+   "rgb": "#b0b4b9"
+  }
+ ],
+ "tracks": [
+  {
+   "id": "trk000",
+   "name": "Maple Hollow",
+   "length_m": 5755,
+   "n_textures": 176,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk001",
+   "name": "Red Mesa",
+   "length_m": 8776,
+   "n_textures": 205,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk002",
+   "name": "Glass Harbor",
+   "length_m": 7982,
+   "n_textures": 168,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk003",
+   "name": "Larch Valley",
+   "length_m": 8895,
+   "n_textures": 192,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk004",
+   "name": "Snowfield",
+   "length_m": 8397,
+   "n_textures": 157,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk005",
+   "name": "Ember Gulch",
+   "length_m": 10165,
+   "n_textures": 230,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk006",
+   "name": "Midnight Harbor",
+   "length_m": 8629,
+   "n_textures": 170,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk007",
+   "name": "Winter Larch",
+   "length_m": 10335,
+   "n_textures": 191,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk008",
+   "name": "Neon Mile",
+   "length_m": 7368,
+   "n_textures": 278,
+   "blurb": "Classic circuit, rebuilt textures"
+  },
+  {
+   "id": "trk100",
+   "name": "Cedar Ridge",
+   "blurb": "Rolling hills, flowing bends",
+   "length_m": 2282,
+   "positions": 376
+  },
+  {
+   "id": "trk101",
+   "name": "Harbor Loop",
+   "blurb": "Flat out: long straights, fast sweepers",
+   "length_m": 2868,
+   "positions": 472
+  },
+  {
+   "id": "trk102",
+   "name": "Granite Pass",
+   "blurb": "Tight and twisty mountain road",
+   "length_m": 1807,
+   "positions": 296
+  }
+ ]
+}
