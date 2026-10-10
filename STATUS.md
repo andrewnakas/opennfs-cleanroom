@@ -118,4 +118,7 @@ Last update: 2026-10-10 about 05:15, session 2
 - Nothing to record: there are no voices in this game.
 
 ## Publish log
-(nothing published yet)
+- 2026-10-10 05:25: first public build. Repo `andrewnakas/opennfs-cleanroom` (curated sources on `main`, site on `gh-pages`),
+  Pages enabled. Gates at publish: taint scan 0 failing, name scan 0 hits (site, clean tree, exported sources). Release build:
+  function names stripped, zero-filling allocation operators (mitigation). Checked live: Circuit 3, Circuit 6 and one original
+  circuit reach "ready" from the public address with no trap.
