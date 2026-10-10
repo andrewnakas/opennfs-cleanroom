@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+# never commit game files, specs or build outputs
+*.viv
+*.frd
+*.col
+*.qfs
+*.fsh
+*.fce
+*.can
+*.hrz
+*.iso
+/site/
+/build/
+/spec/

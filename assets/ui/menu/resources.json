@@ -1,0 +1,32 @@
+{
+  "resources": [
+    {
+      "name": "backgroundPattern",
+      "path": "../resources/ui/menu/images/bgGrillePattern.png"
+    },
+    {
+      "name": "leftMenuCurve",
+      "path": "../resources/ui/menu/images/leftMenuCurve.png"
+    },
+    {
+      "name": "uiLogo",
+      "path": "../resources/ui/menu/images/logo.png"
+    },
+    {
+      "name": "pillButton",
+      "path": "../resources/ui/menu/images/pillButton.png"
+    },
+    {
+      "name": "dropdownButton",
+      "path": "../resources/ui/menu/images/dropdownButton.png"
+    },
+    {
+      "name": "dropdownEntry",
+      "path": "../resources/ui/menu/images/dropdownEntry.png"
+    },
+    {
+      "name": "missingResource",
+      "path": "../resources/ui/menu/images/missingResource.png"
+    }
+  ]
+}

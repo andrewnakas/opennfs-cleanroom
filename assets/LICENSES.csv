@@ -1,0 +1,24 @@
+item,kind,source,author,licence,notes
+Track "Cedar Ridge" (geometry, collision, virtual road, camera path),track,games/opennfs/synth_track.py,this project,CC0-1.0,"Original circuit generated from a formula. Not derived from any game file."
+Track textures (road, verge, grass, hills, barrier, trees, signs),texture,games/opennfs/proctex.py,this project,CC0-1.0,"Procedural (numpy + PIL). Sign lettering rendered with PIL's built-in font."
+Cars: Clean Coupe / Clean Hatch / Clean Wedge (meshes, paint atlas, data),car,games/opennfs/synth_car.py,this project,CC0-1.0,"Original lofted shapes. No real make, model, badge or livery."
+Sky dome textures (tint, sun, moon, clouds), sphere mesh, reflection map,sky,games/opennfs/build_assets.py,this project,CC0-1.0,Procedural.
+Particle and light sprites,sprite,games/opennfs/build_assets.py,this project,CC0-1.0,Procedural.
+Menu images and logo,ui,games/opennfs/build_assets.py,this project,CC0-1.0,Procedural. Logo lettering rendered with PIL's built-in font.
+All sound and music,audio,ports/opennfs/web/audio.js,this project,CC0-1.0,"Synthesised live with WebAudio (engine, tyres, wind, impacts, signals, music loop). No samples."
+Page (HTML, CSS, JavaScript),code,ports/opennfs/web,this project,MIT,
+UI font: DejaVu Sans Bold,font,https://dejavu-fonts.github.io/,DejaVu fonts team / Bitstream,Bitstream Vera + DejaVu licence,Licence text shipped as assets/ui/fonts/LICENSE_DEJAVU.txt
+Engine: OpenNFS,code,https://github.com/OpenNFS/OpenNFS (dcd9197),Amrik Sadhra and contributors,MIT,"Patched for the web (ports/opennfs). None of the art bundled in that repository is used."
+Asset format parsers: LibOpenNFS,code,https://github.com/OpenNFS/LibOpenNFS (3ebd326),Amrik Sadhra and contributors,MIT,
+Bullet Physics,code,https://github.com/bulletphysics/bullet3 (63c4d67),Erwin Coumans and contributors,Zlib,
+Dear ImGui,code,https://github.com/ocornut/imgui (b2546a5),Omar Cornut and contributors,MIT,Developer overlay only.
+ImPlot,code,https://github.com/epezent/implot (81b8b19),Evan Pezent and contributors,MIT,Developer overlay only.
+ImGuiColorTextEdit,code,https://github.com/BalazsJako/ImGuiColorTextEdit (ca2f9f1),BalazsJako,MIT,
+GLM,code,https://github.com/g-truc/glm (1.0.1),G-Truc Creation,MIT,
+FreeType,code,https://freetype.org (emscripten port),FreeType project,FreeType Licence (FTL),
+nlohmann/json,code,https://github.com/nlohmann/json,Niels Lohmann,MIT,
+stb_image,code,https://github.com/nothings/stb,Sean Barrett,MIT / public domain,
+tinyobjloader,code,https://github.com/tinyobjloader/tinyobjloader (d56555b),Syoyo Fujita and contributors,MIT,
+magic_enum,code,https://github.com/Neargye/magic_enum,Daniil Goncharov,MIT,
+argparse,code,https://github.com/p-ranav/argparse,Pranav Srinivas Kumar,MIT,
+Emscripten runtime (incl. GLFW emulation),code,https://emscripten.org,Emscripten authors,MIT / NCSA,

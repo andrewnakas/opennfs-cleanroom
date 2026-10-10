@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="description" content="Open Road: a classic arcade racer in the browser. Open-source engine, original clean-room track, cars and sound.">
+<title>Open Road: clean-room racer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f0c428'/%3E%3Cpath d='M6 24 L13 8 h4 l-3 7 h8 l-7 9 2-6 h-6z' fill='%2317130a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="canvas" tabindex="0" oncontextmenu="event.preventDefault()"></canvas>
+
+  <!-- Race HUD: filled by game.js from the engine's telemetry -->
+  <div id="hud" class="hidden">
+    <div class="hud-box" id="hud-pos"><span class="label">POS</span><b id="pos">1</b><small id="pos-of">/1</small></div>
+    <div class="hud-box" id="hud-lap"><span class="label">LAP</span><b id="lap">1</b><small id="lap-of">/3</small></div>
+    <div class="hud-box" id="hud-time">
+      <div><span class="label">TIME</span><b id="time">0:00.00</b></div>
+      <div><span class="label">LAP</span><span id="laptime">0:00.00</span></div>
+      <div><span class="label">BEST</span><span id="best">-:--.--</span></div>
+    </div>
+    <div id="hud-speed">
+      <div id="rev"><i id="rev-fill"></i></div>
+      <div class="speed-row"><b id="speed">0</b><small>km/h</small><span id="gear">N</span></div>
+    </div>
+    <div id="banner" class="hidden"></div>
+    <div id="notice" class="hidden"></div>
+  </div>
+
+  <!-- Touch controls (shown on touch screens) -->
+  <div id="touch" class="hidden">
+    <button class="tbtn" id="t-left" data-bit="left" aria-label="steer left">&#9664;</button>
+    <button class="tbtn" id="t-right" data-bit="right" aria-label="steer right">&#9654;</button>
+    <button class="tbtn" id="t-brake" data-bit="brake" aria-label="brake">BRAKE</button>
+    <button class="tbtn" id="t-gas" data-bit="accel" aria-label="accelerate">GAS</button>
+    <button class="tbtn small" id="t-reset" data-bit="reset" aria-label="back on track">&#8634;</button>
+    <button class="tbtn small" id="t-cam" data-bit="camera" aria-label="camera">CAM</button>
+  </div>
+  <div id="topbar" class="hidden">
+    <button id="btn-menu" aria-label="menu">&#9776;</button>
+    <button id="btn-sound" aria-label="sound">&#9834;</button>
+    <button id="btn-full" aria-label="fullscreen">&#9974;</button>
+  </div>
+
+  <!-- Results -->
+  <div id="results" class="overlay hidden">
+    <h2 id="results-title">FINISH</h2>
+    <table id="results-table"></table>
+    <div class="row">
+      <button class="go" id="again">Race again</button>
+      <button class="ghost" id="to-menu">Change car</button>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div id="menu" class="overlay">
+    <h1>OPEN <span>ROAD</span></h1>
+    <p class="tag">A classic arcade racer in your browser. Open-source engine, original clean-room track, cars and sound.</p>
+    <div class="panel">
+      <div class="field"><span class="label">TRACK</span><div id="tracks" class="choices"></div></div>
+      <div class="field"><span class="label">CAR</span><div id="cars" class="choices"></div></div>
+      <div class="field"><span class="label">COLOUR</span><div id="colours" class="choices"></div></div>
+      <div class="field two">
+        <div><span class="label">OPPONENTS</span><div id="opponents" class="choices"></div></div>
+        <div><span class="label">LAPS</span><div id="laps" class="choices"></div></div>
+      </div>
+    </div>
+    <button class="go" id="go">Start race</button>
+    <button class="ghost hidden" id="resume">Back to race</button>
+    <p class="keys"><kbd>W</kbd>/<kbd>&uarr;</kbd> accelerate &nbsp; <kbd>S</kbd>/<kbd>&darr;</kbd> brake, reverse &nbsp; <kbd>A</kbd> <kbd>D</kbd>/<kbd>&larr;</kbd> <kbd>&rarr;</kbd> steer &nbsp; <kbd>Space</kbd> handbrake<br>
+       <kbd>R</kbd> back on track &nbsp; <kbd>C</kbd> camera &nbsp; <kbd>L</kbd> lights &nbsp; <kbd>M</kbd> sound &nbsp; <kbd>Esc</kbd> menu &nbsp; gamepad and touch work too</p>
+    <p class="credit"><a href="credits.html" target="_blank" rel="noopener">credits and licences</a></p>
+  </div>
+
+  <div id="loading" class="overlay hidden">
+    <h1>OPEN <span>ROAD</span></h1>
+    <div id="bar"><i></i></div>
+    <div id="status">Loading</div>
+    <div id="err"></div>
+  </div>
+</div>
+<script src="audio.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

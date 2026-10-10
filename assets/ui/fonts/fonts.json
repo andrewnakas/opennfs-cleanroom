@@ -1,0 +1,9 @@
+{
+  "fonts": [
+    {
+      "name": "ui",
+      "path": "../resources/ui/fonts/ui-font.ttf",
+      "size": 40
+    }
+  ]
+}

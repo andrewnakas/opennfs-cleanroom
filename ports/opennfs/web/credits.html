@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Road: credits and licences</title>
+<style>
+  body { margin: 0; background: #0d1118; color: #e6e8eb; font: 15px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 28px 18px 60px; }
+  h1 { font-style: italic; letter-spacing: .04em; } h1 span { color: #f0c428; }
+  h2 { margin-top: 34px; color: #f0c428; font-size: 18px; }
+  a { color: #9cc3ff; } li { margin: 4px 0; } code { background: #1a212c; padding: 1px 5px; border-radius: 4px; }
+  .dim { color: #9aa3ad; }
+</style>
+</head>
+<body>
+<main>
+<h1>OPEN <span>ROAD</span></h1>
+<p>A browser build of an open-source classic racing engine, running on a track, cars, textures and sound that were all
+made for this project. <a href="index.html">Back to the game</a></p>
+
+<h2>What "clean room" means here</h2>
+<p>The engine can read the track and car file formats of several classic PC racing games. This build contains
+<b>no data from any commercial game</b>: the circuit is generated from a formula, the cars are original shapes with invented
+names, the textures are procedural, and every sound is synthesised in your browser. The files are written in the formats the
+engine understands by a generator that was written from the open-source parser only.</p>
+<p class="dim">None of the artwork bundled with the upstream engine repository is used either; it is regenerated too.</p>
+
+<h2>Content made for this project (CC0 1.0)</h2>
+<ul>
+  <li>Track "Cedar Ridge": geometry, collision, driving line, scenery placement</li>
+  <li>Cars "Clean Coupe", "Clean Hatch" and "Clean Wedge" by the fictional "Cleanroom Motors". They are not based on any real vehicle.</li>
+  <li>All textures, sky, sprites, menu images</li>
+  <li>All sound effects and music (generated live with WebAudio)</li>
+</ul>
+
+<h2>Software</h2>
+<ul>
+  <li><a href="https://github.com/OpenNFS/OpenNFS">OpenNFS</a> engine and LibOpenNFS format parsers, &copy; Amrik Sadhra and contributors, MIT licence. Patched for WebGL2 and extended with race rules, AI, HUD and audio for this build.</li>
+  <li><a href="https://github.com/bulletphysics/bullet3">Bullet Physics</a>, &copy; Erwin Coumans and contributors, Zlib licence</li>
+  <li><a href="https://github.com/ocornut/imgui">Dear ImGui</a>, ImPlot, ImGuiColorTextEdit (developer overlay), MIT licence</li>
+  <li><a href="https://github.com/g-truc/glm">GLM</a>, nlohmann/json, stb_image, tinyobjloader, magic_enum, argparse, MIT licence (stb also public domain)</li>
+  <li><a href="https://freetype.org">FreeType</a>, FreeType Licence. Portions of this software are copyright &copy; The FreeType Project. All rights reserved.</li>
+  <li><a href="https://emscripten.org">Emscripten</a> runtime, MIT / NCSA licence</li>
+  <li>Font: <a href="https://dejavu-fonts.github.io/">DejaVu Sans</a>, Bitstream Vera and DejaVu licence</li>
+</ul>
+
+<h2>MIT licence (engine)</h2>
+<p class="dim">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies
+or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+<p class="dim">This is an unofficial fan project. It is not affiliated with or endorsed by any game publisher or car maker.
+Source, build scripts and the full asset ledger: see the repository linked from the project page.</p>
+</main>
+</body>
+</html>
